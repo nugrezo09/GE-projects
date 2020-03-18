@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+
+  <title>Ergun Oz</title>
+  
+  <style>
+  
+    body {
+      text-align: center;
+      background: url(https://i.imgur.com/R5CQbjB.jpg);
+      background-size: cover;
+      background-position: center;
+      color: white;
+      font-family: helvetica;
+      
+    }
+    
+    p {
+      font-size: 20px;
+      font-weight: bold
+    }
+    
+    input {
+      border: 0;
+      padding: 8px;
+      font-size: 15px;
+    }
+    
+    input[type="submit"] {
+      background: grey;
+      color: white;
+    }
+        
+    img {
+      width: 200;
+      border: 3px solid orange;
+      border-radius: 50px;
+      filter: grayscale(60%);
+    }
+    
+</style>
+
+</head>
+
+<body> 
+
+  <img src=" https://i.imgur.com/vMBjT9f.png?1"> 
+  
+  <p>Hi! I'm Ergun, a NYC-based student developer. Hello to everyone!</p>
+  
+  <input type="email" placeholder="Please enter your email">
+  
+  <input type="submit">
+  
+</body>

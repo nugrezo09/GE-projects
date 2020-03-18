@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<head>
+
+  <link href="/normalize.css" rel="stylesheet">
+  
+  <style>
+    header {
+      text-align: center;
+      background: url(https://i.imgur.com/YR124h0.jpg);
+      background-size: cover;
+      color: Purple;
+    }
+    
+    a {
+      color: pink;
+      font-weight: bold
+    }
+    
+    h1 {
+      font-size: 70px;
+    }
+    
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid pink;
+      border-radius: 90px;
+    }
+    
+    ul {
+      padding: 22px;
+      background: rgba(0,0,50,0.5);
+    }
+    
+    li {
+      display: inline;
+      padding: 0px 20px 0px 20px;
+    }
+    
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+  
+</head>
+
+<body>
+
+  <header>
+  
+    <img src="https://i.imgur.com/K6X1LR4.jpg?1" width=250>
+    
+    <h1>Ayana's Blog</h1>
+    
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">My Photos</a></li>
+      <li><a href="#">My Favorite Foods </a></li>
+       <li><a href="#">My Daily Schedule </a></li>
+    </ul>
+    
+  </header>
+  
+  <article>
+    <h2>Toys & Games</h2>
+    <p>I am crazy of playing Toys and Games. Typically, I prefer bright colors. I do like healty plastic toys. I do not like playing with toys made by textile. I am very sensible to sound and i like toys which make sounds. So you can help me to turn my head toward sound.  While you play with me please lift my hand gently becuase do not forget i am new born little cutie.</p>
+    <button>Like</button>
+  </article>
+  
+  <article>
+    <h2>My Socialization</h2>
+    <p>Face to face interactions and conversation is very helpful to me. Making eye contact, smiling, talking and singing to me and playing copycat help me to get a sense of turn-taking.</p>
+    <button>Like</button>
+  </article>
+  
+  <article>
+    <h2>Care About Me</h2>
+    <p>Wash your hands before you touch me. Support me from my neck and head when you hold me. Never shake me becuase i am a new born. Make sure I am securely fastened. Remember that i am not ready to rough play becuase i am little chick</p>
+    <button>Like</button>
+  </article>
+  
+  <script>
+    $("button").on("click", function() {
+      alert("Awesome!");
+    });
+    
+  </script>
+  
+</body>
