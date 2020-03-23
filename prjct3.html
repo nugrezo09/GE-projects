@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<head>
+<script src="/assets/jquery.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #232323;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 20px 0 0 0;
+  border-radius: 20px;
+}
+h1 {
+  font-family: 'Open Sans', cursive;
+  text-align: center;
+  font-size: 60px;
+  color: #aaaaaa;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #bbbbbb;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  height: 30px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  transition:height .5s;
+  -webkit-transition:height .5s;
+  -moz-transition:height .5s;
+}
+
+small{
+  opacity:0;
+}
+.show-description p{
+  height:150px;
+}
+.show-description small{
+  opacity:1;
+}
+.first{
+  background-image: url("https://i.imgur.com/venOs4K.jpg");
+}
+.second{
+  background-image: url("https://i.imgur.com/1SYl2D1.jpg");
+}
+.dessert{
+  background-image: url("https://i.imgur.com/ArmMBvn.jpg");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+}
+}
+h2 {
+  font-size: 20px;
+  margin:20px 0 30px 0;
+}
+
+div {
+ margin: 20px 12px 0 12px;
+}
+}
+ p{
+    font-size:20px;
+    line-height:24px;
+  }
+  small{
+    font-size:16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Dr. Oz`s restaurant</h1>
+<h2>a New York City eatery</h2>
+<div class="first">
+  <p>Pasta Pomodoro <span class="price">$18</span><br />
+  <small>Spagetti and meatballs and highlights the freshness of tomatoes,  small yellow onion, chopped cloves garlic, minced  thinly sliced basil,  garnish.</small></p>
+</div>
+
+<div class="second">
+  <p>Pasta Alla Puttanesca <span class="price">$20</span><br />
+  <small>Spagetti, anchovies and black olives, chopped tomatoes, garlic cloves, capers, extra virgin olive oil</small></p>
+</div>
+  
+<div class="dessert">
+  <p>Cheescake <span class="price">$8</span><br />
+  <small>Filled with chocolate, red velvet, mousse, cream cheese frosting, etc.
+Covered in peanut butter, dark chocolate, milk chocolate
+Cheesecake base made with Oreo, chocolate, fresh fruit.</small></p>
+</div>
+
+<script> 
+$('div').on('click', function() {
+  $(this).toggleClass('show-description');
+});
+
+</script>
+
+</body>
